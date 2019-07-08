@@ -117,7 +117,7 @@ function typecast(value) {
 }
 
 function cast(type, value) {
-    const val = decodeURI(value);
+    const val = decodeURIComponent(value);
     switch (type) {
         case 'number':
             if (isNaN(val)) {
